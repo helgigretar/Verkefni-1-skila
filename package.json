@@ -1,0 +1,38 @@
+{
+  "name": "storskil2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "browser-sync": "browser-sync start --server --files index.ejs",
+    "sass": "node-sass --watch",
+    "dev": "npm-run-all --parallel sass browser-sync",
+    "lint": "stylelint *.scss scss/*.scss --syntax scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "lint": "^1.1.2",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "stylelint": "^8.1.1",
+    "stylelint-config-primer": "^2.0.1"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.16.2",
+    "front-matter": "^2.3.0",
+    "gray-matter": "^3.1.1",
+    "markdown-it": "8.4.0",
+    "path": "^0.12.7"
+  }
+}
