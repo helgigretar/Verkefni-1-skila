@@ -1,0 +1,24 @@
+<% include header %>
+
+<section class = "main__Section">
+        <% for(let i = 0; i < sida.length; i+=1){ %>
+            <div class="card">
+                <a href="<%= sida[i].slug %>" >
+           <% if(sida[i].image){ %>
+            <img class ="card__image" src = <%- sida[i].image %>>
+           <%  } else{ %>
+            <div class="NoPhoto"></div>
+           <% } %>
+            <div class ="TextHolder">
+                <h3 class = "card__title">
+                    <%= sida[i].title %>
+                </h3>
+                <div class ="card__time">
+                    <%= sida[i].time %>
+                </div>
+            </div>
+            </a>
+            </div>
+                <% } %>
+</section>
+<% include footer %>
